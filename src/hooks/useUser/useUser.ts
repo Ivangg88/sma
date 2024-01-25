@@ -39,12 +39,13 @@ const useUser = () => {
 
       const loginUser: UserLoged = {
         ...user,
+        userName: userLogin.userName,
         expenses: mockUser.expenses,
         incomes: mockUser.incomes,
         isLogged: true,
       };
 
-      successFeedback(`Welcome ${user.userName}`);
+      successFeedback(`Welcome ${loginUser.userName}`);
       dispatch(userLoginActionCreator(mockUser));
       localStorage.setItem("token", loginUser.token);
       navigate("/main");

@@ -5,12 +5,12 @@ import { validateIncomesExpensesForm } from "../../schemas/validateIncomesExpens
 import { closeIncomeFormActionCreator } from "../../store/actions/uiActions/uiActions";
 import { UiContext } from "../../store/uiContext/uiContext";
 import { incomesCategories } from "../../Utils/categories";
-import { mockExpense } from "../../Utils/mockBack";
+import { initialExpenseIncome } from "../../Utils/mockBack";
 import { IncomesExpensesFormikForm } from "../IncomesExpensesFormikForm/IncomesExpensesFormikForm";
 
 export const NewIncome = () => {
   const income = {
-    ...mockExpense,
+    ...initialExpenseIncome,
     category: {
       name: incomesCategories.income.name,
       icon: incomesCategories.income.icon,

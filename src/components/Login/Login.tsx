@@ -5,7 +5,7 @@ import { UserLogin } from "../../interfaces/interfaces";
 
 import useUser from "../../hooks/useUser/useUser";
 
-const initialValues: UserLogin = { userName: "", password: "" };
+const initialValues: UserLogin = { userName: "John Doe", password: "12345678" };
 
 const Login = (): JSX.Element => {
   const { loginUser } = useUser();

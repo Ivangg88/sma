@@ -128,3 +128,14 @@ export const mockExpense: ExpenseIncome = {
   quantity: 10,
   id: "a1b2",
 };
+
+export const initialExpenseIncome: ExpenseIncome = {
+  category: {
+    name: "",
+    icon: "",
+  },
+  date: "",
+  name: "",
+  quantity: 0,
+  id: "",
+};

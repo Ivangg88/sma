@@ -1,5 +1,4 @@
 import { Form, useFormikContext } from "formik";
-import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 import CustomInputField from "../CustomInputField/CustomInputField";
 import LoginFormikFormStyled from "./LoginFormikFormStyled";
@@ -21,6 +20,7 @@ const LoginFormikForm = (): JSX.Element => {
           name="userName"
           placeholder="username"
           type="text"
+          value={"John Doe"}
         />
 
         <CustomInputField
@@ -29,16 +29,10 @@ const LoginFormikForm = (): JSX.Element => {
           name="password"
           placeholder="********"
           type="password"
+          value={"12345678"}
         />
 
         <Button type="submit" text="Login" disabled={!isValid} />
-
-        <span className="form-container__login-text">
-          Haven't an account yet?{" "}
-          <NavLink to={"/register"} className="form-container__login-link">
-            Register
-          </NavLink>
-        </span>
       </Form>
     </LoginFormikFormStyled>
   );

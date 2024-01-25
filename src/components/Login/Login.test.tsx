@@ -9,7 +9,7 @@ describe("Given a Login components", () => {
       const inputUserText = "Username";
       const inputPasswordText = "Password";
       const userWrite = "John Doe";
-      const passwordWrite = "123123";
+      const passwordWrite = "12345678";
 
       render(
         <BrowserRouter>
