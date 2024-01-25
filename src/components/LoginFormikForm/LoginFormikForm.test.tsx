@@ -19,17 +19,5 @@ describe("Given a LoginFormikForm component", () => {
       expect(inputPassword).toBeInTheDocument();
       expect(button).toHaveTextContent(buttonText);
     });
-
-    test("And a text with a link to navigate to register", () => {
-      const textAccount = "Haven't an account yet?";
-      const linkText = "Register";
-      renderWithFormik(<LoginFormikForm />);
-
-      const text = screen.getByText(textAccount);
-      const link = screen.getByRole("link");
-
-      expect(text).toBeInTheDocument();
-      expect(link).toHaveTextContent(linkText);
-    });
   });
 });
